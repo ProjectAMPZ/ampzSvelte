@@ -1,0 +1,1 @@
+function e(e){let r=e=>{let r=e.dataset.src;(e=>new Promise((r,t)=>{let o=new Image;o.src=e,o.onload=r,o.onerror=t}))(r).then(()=>{e.src=r})},t=new IntersectionObserver((e,t)=>{e.forEach(e=>{e.isIntersecting&&r(e.target)})},{root:null,rootMargin:"0px",threshold:.9});return t.observe(e),{destroy(){t.unobserve(e)}}}export{e as l};
